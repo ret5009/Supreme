@@ -3,6 +3,7 @@ import discord
 import asyncio
 import random
 import datetime
+import os
 
 
 client = discord.Client()
@@ -100,5 +101,5 @@ async def on_message(message):
         result = choice[nember-1]
         await client.send_message(message.channel, result)
 
-
-client.run('NTQ4OTQ2MjIyMjEyNDQ4MjU3.D1MtpQ.QnHeRMl6h3lGDMLI7tD2Igr1WUI')
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
