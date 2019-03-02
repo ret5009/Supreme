@@ -1,3 +1,4 @@
 discord.py==0.16.12
+pip.py==19.0.3
 asyncio.py==3.4.3
 DateTime.py==4.3
