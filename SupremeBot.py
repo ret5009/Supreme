@@ -21,14 +21,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith('!도움말'):
-        await client.send_message(message.channel, " ```!팀나누기 = !팀나누기 멤버1 멤버2/팀번호1 팀번호2``` ")
-        await client.send_message(message.channel, " ```!투표 = !투표 투표내용/투표목록1/투표목록2``` ")
-        await client.send_message(message.channel, " ```!주사위 = !주사위 2x6(6면체 주사위를 2번 굴려라)``` ")
-        await client.send_message(message.channel, " ```!골라 = !골라 짜장면 짬뽕``` ")
-        await client.send_message(message.channel, " ```!뭐먹지 = 음식추천``` ")
-        await client.send_message(message.channel, " ```!관리자 = 관리자호출``` ")
-        await client.send_message(message.channel, " ```도움말에 없는 숨겨진 명령어를 찾으면 소정의상품증정(베라싱글기프트콘)힌트는 관리자에게 DM ``` ")
-
+       await client.send_message(message.channel, " ```팀나누기 = !팀나누기 멤버1 멤버2/팀번호1 팀번호2\n투표 = !투표 투표내용/투표목록1/투표목록2\n주사위 = !주사위 2x6 (6면체 주사위를 2번 굴려라)\n골라 = !골라 짜장면 짬뽕\n음식추천 = !뭐먹지\n관리자호출 = !관리자\n도움말에 없는 숨겨진 명령어를 찾으면 소정의상품증정(베라싱글기프트콘)힌트는 관리자에게 DM ``` ")
 
     if message.content.startswith('!관리자들'):
         await client.send_message(message.channel, "일좀해라")
@@ -54,7 +47,7 @@ async def on_message(message):
         teamname = team.split(" ")
         random.shuffle(teamname)
         for i in range(0, len(person)):
-            await client.send_message(message.channel, "```" + person[i] + "```"  + "```" + teamname[i] + "```")
+            await client.send_message(message.channel, "  " + person[i] + "  " + " ➡ " + "  " + teamname[i] + "  ")
 
     if message.content.startswith("!투표"):
         vote = message.content[4:].split("/")
