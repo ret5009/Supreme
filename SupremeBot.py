@@ -78,7 +78,7 @@ async def on_message(message):
         await client.send_message(message.channel, choiceresult)
 
     if message.content.startswith('!뭐먹지'):
-        food = "짜장면 짬뽕 라면 밥 굶기 제육볶음 김밥 떡볶이 만두 순대 김치찌개 된장찌개 월남쌈 닭발 곱창 찜닭 햄버거 족발 보쌈 초밥 연어 고추장찌개 치킨 소고기 갈비 부대찌개 콩비지찌개 콩나물국 음료수 젤리 사탕 초콜릿 과자 빵 꼬막 삼겹살 소갈비 굴비 샥스핀 해파리냉채 김치전 감지탕 유산슬 떡갈비 3분카레 3분짜장 스테이크 함박스테이크 미트볼 계란후라이"
+        food = "짜장면 짬뽕 라면 밥 굶기 제육볶음 김밥 떡볶이 만두 순대 김치찌개 된장찌개 월남쌈 닭발 곱창 찜닭 햄버거 족발 보쌈 초밥 연어 고추장찌개 치킨 소고기 갈비 부대찌개 콩비지찌개 콩나물국 음료수 젤리 사탕 초콜릿 과자 빵 꼬막 삼겹살 소갈비 굴비 샥스핀 해파리냉채 김치전 감자탕 유산슬 떡갈비 3분카레 3분짜장 스테이크 함박스테이크 미트볼 계란후라이"
         foodchoice = food.split(" ")
         foodnember = random.randint(1, len(foodchoice))
         foodresult = foodchoice[foodnember-1]
