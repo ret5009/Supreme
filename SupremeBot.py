@@ -21,7 +21,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith('!도움말'):
-       await client.send_message(message.channel, " ```이 봇은 클랜Supreme에서 자체적으로 개발한 봇입니다. 많은 이용 부탁드립니다.\n\n팀나누기 = !팀나누기 멤버1 멤버2/팀번호1 팀번호2\n\n투표 = !투표 투표내용/투표목록1/투표목록2\n\n주사위 = !주사위 2x6 (6면체 주사위를 2번 굴려라)\n\n골라 = !골라 짜장면 짬뽕\n\n음식추천 = !뭐먹지\n\n관리자호출 = !관리자\n\n도움말에 없는 숨겨진 명령어를 찾으면 소정의상품증정(베라싱글기프트콘)힌트는 관리자에게 DM ``` ")
+       await client.send_message(message.channel, " ```이 봇은 클랜Supreme에서 자체적으로 개발한 봇입니다.\n많은 이용 부탁드립니다.\n\n\n팀나누기 = !팀나누기 멤버1 멤버2/팀번호1 팀번호2\n\n투표 = !투표 투표내용/투표목록1/투표목록2\n\n주사위 = !주사위 2x6 (6면체 주사위를 2번 굴려라)\n\n골라 = !골라 짜장면 짬뽕\n\n음식추천 = !뭐먹지\n\n관리자호출 = !관리자\n\n도움말에 없는 숨겨진 명령어를 찾으면 소정의상품증정(베라싱글기프트콘)힌트는 관리자에게 DM ``` ")
 
     if message.content.startswith('!인재는잘생김'):
         await client.send_message(message.channel, "인정")
