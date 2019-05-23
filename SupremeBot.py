@@ -50,7 +50,7 @@ async def on_message(message):
         vote = message.content[4:].split(",")
         await client.send_message(message.channel, "★투표 - " + vote[0])
         for i in range(1, len(vote)):
-            choose = await client.send_message(message.channel, "```" + vote[i] + "```")
+            choose = await client.send_message(message.channel, " " + vote[i] + " ")
             await client.add_reaction(choose, '👍')
 
     if message.content.startswith('!정보'):
