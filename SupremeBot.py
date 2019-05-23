@@ -3,6 +3,7 @@ import discord
 import asyncio
 import random
 import datetime
+import openpyxl
 import os
 
 
@@ -100,7 +101,7 @@ async def on_message(message):
 
     
     if message.content.startswith(""):
-        file = open.load_workbook("레벨.xlsx")
+        file = openpyxl.load_workbook("레벨.xlsx")
         sheet = file.active
         exp = [10, 20, 30, 40, 50]
         i = 1
