@@ -117,6 +117,7 @@ async def on_message(message):
                 sheet['A' + str(i)].value = str(message.author.id)
                 sheet['B' + str(i)].value = 0
                 sheet['C' + str(i)].value = 1
+                file.save('레벨.xlsx')
                 break
 
             i += 1
