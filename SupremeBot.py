@@ -93,7 +93,7 @@ async def on_message(message):
         await client.send_message(message.channel, foodresult)
 
     if message.content.startswith('!관리자'):
-        dd = "<@346287576237342720> <@256809582226178048>"
+        dd = "<@370973274320011275>"
         choice = dd.split(" ")
         nember = random.randint(1, len(choice))
         result = choice[nember-1]
